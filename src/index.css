@@ -1,13 +1,141 @@
+/** @format */
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+.app__wrapp {
+  display: flex;
+  justify-content: space-between;
+}
+.filter {
+  flex: 0 1 18%;
+}
+.filter input {
+  width: 100%;
+}
+.catalog {
+  flex: 0 1 80%;
+}
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item {
+  margin: 3px;
+  border: 1px solid rgb(136, 136, 136);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.item-img {
+  width: 100%;
+  height: 200px;
+  background: rgb(237, 186, 186);
+}
+.item__line-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px 0 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.item-name {
+  width: 200px;
+}
+.item-yers {
+  color: rgb(255, 0, 0);
+}
+.item__line-body {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.item-price{
+font-size: 18px;
+  font-weight: 700;
+}
+.item-btn{
+	margin-bottom: 20px;
+	width: 100%;
+	border: 2px solid #000;
+	background-color:  rgb(255, 0, 0);
+	color: #fff;
+	padding: 10px 0;
+
+}
+.form{
+	width: 200px;
+}
+.form input{
+	width: 100%;
+}.header__container {
+	max-width: 1200px;
+	margin: 0 auto;
+ }
+ .header__line {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+	border-bottom: 1px solid rgb(128, 123, 123);
+ }
+ .header__title-top {
+	font-size: 18px;
+ }
+ .header__block-top > button + button {
+	margin-left: 30px;
+ }
+ .header__block-center {
+	font-size: 15px;
+	text-align: center;
+ }
+ .header__block-center a {
+	display: block;
+ }
+ .header__socialNetwork {
+	display: flex;
+ }
+ .header__socialNetwork > a + a {
+	margin-left: 10px;
+ }
+ .header__carInfo {
+	display: flex;
+ }
+ 
+ .header__card,
+ .header__avto {
+	display: block;
+	margin-left: 10px;
+	font-weight: 600;
+	font-size: 20px;
+ }
+ .header__card {
+	color: rgb(219, 0, 0);
+ }
+ .header__card > span,.header__avto > span {
+	width: 90%;
+	display: inline-block;
+ }
+ .header__card > span{
+	 text-align: right;
+ }
+ .header__avto > span{
+	 text-align: left;
+ }
