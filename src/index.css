@@ -117,8 +117,9 @@ font-size: 18px;
  }
  .header__carInfo {
 	display: flex;
+	
  }
- 
+
  .header__card,
  .header__avto {
 	display: block;
